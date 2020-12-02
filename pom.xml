@@ -8,9 +8,9 @@
     <artifactId>CS350_Proj2-2</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properies>
+    <properties>
         <java.version>1.8</java.version>
-    </properies>
+    </properties>
 
 
 </project>
