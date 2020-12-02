@@ -14,14 +14,6 @@
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>io.jenkins.plugins</groupId>
-            <artifactId>warnings-ng</artifactId>
-            <version>8.1.0</version>
-        </dependency>
-    </dependencies>
-
     <build>
         <plugins>
             <!-- Do not deploy anything except for the plugin -->
