@@ -13,7 +13,7 @@ import static java.lang.Math.pow;
 public class Calculator {
 
     public enum BiOperatorModes {
-        Normal, Add, Minus, Multiply, Divide, Xpowerofy
+        NORMAL, ADD, Minus, Multiply, Divide, Xpowerofy
     }
 
     public enum MonoOperatorModes {
@@ -21,13 +21,13 @@ public class Calculator {
     }
 
     private Double num1, num2;
-    private BiOperatorModes mode = BiOperatorModes.Normal;
+    private BiOperatorModes mode = BiOperatorModes.NORMAL;
 
     private Double calculateBiImpl() {
-        if (mode == BiOperatorModes.Normal) {
+        if (mode == BiOperatorModes.NORMAL) {
             return num2;
         }
-        if (mode == BiOperatorModes.Add) {
+        if (mode == BiOperatorModes.ADD) {
             if (num2 != 0) {
                 return num1 + num2;
             }
@@ -52,7 +52,7 @@ public class Calculator {
     }
 
     public Double calculateBi(BiOperatorModes newMode, Double num) {
-        if (mode == BiOperatorModes.Normal) {
+        if (mode == BiOperatorModes.NORMAL) {
             num2 = 0.0;
             num1 = num;
             mode = newMode;
@@ -66,13 +66,13 @@ public class Calculator {
     }
 
     public Double calculateEqual(Double num) {
-        return calculateBi(BiOperatorModes.Normal, num);
+        return calculateBi(BiOperatorModes.NORMAL, num);
     }
 
     public Double reset() {
         num2 = 0.0;
         num1 = 0.0;
-        mode = BiOperatorModes.Normal;
+        mode = BiOperatorModes.NORMAL;
 
         return NaN;
     }

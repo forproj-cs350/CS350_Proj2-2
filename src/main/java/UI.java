@@ -213,7 +213,7 @@ public class UI implements ActionListener {
       }
       
       if (source == butAdd) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.Add, reader()));
+         writer(calc.calculateBi(Calculator.BiOperatorModes.ADD, reader()));
       }
       
       if (source == butMinus) {
