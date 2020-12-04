@@ -115,11 +115,14 @@ public class UI implements ActionListener {
       panelSub7 = new JPanel(new FlowLayout());
       panelSub8 = new JPanel(new FlowLayout());
 
-      font = new Font("Consolas", Font.PLAIN, 18);
+      final int SP = 18;
+      font = new Font("Consolas", Font.PLAIN, SP);
 
-      text = new JTextArea(1, 30);
+      final int TY = 30;
+      text = new JTextArea(1, TY);
 
-      textFont = new Font("Consolas", Font.BOLD, 24);
+      final int TF = 24;
+      textFont = new Font("Consolas", Font.BOLD, TF);
 
       final int TEN = 10;
 
@@ -166,7 +169,6 @@ public class UI implements ActionListener {
       text.setEditable(false);
 
       final int TEN = 10;
-
       for (int i = 0; i < TEN; i++) {
          but[i].setFont(font);
       }
@@ -237,7 +239,7 @@ public class UI implements ActionListener {
       panelSub8.add(butBinary);
       panel.add(panelSub8);
 
-      for (int i = 0; i < 10; i++) {
+      for (int i = 0; i < TEN; i++) {
          but[i].addActionListener(this);
       }
       butAdd.addActionListener(this);
@@ -265,8 +267,9 @@ public class UI implements ActionListener {
    @Override
    public void actionPerformed(final ActionEvent e) {
       final Object source = e.getSource();
+      final int TEN = 10;
 
-      for (int i = 0; i < 10; i++) {
+      for (int i = 0; i < TEN; i++) {
          if (source == but[i]) {
             text.replaceSelection(buttonValue[i]);
             return;

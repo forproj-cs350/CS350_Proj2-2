@@ -131,8 +131,11 @@ public class Calculator {
         if (newMode == MonoOperatorModes.LOG) {
             return log10(num);
         }
+
+        final int TTEN = 100;
+
         if (newMode == MonoOperatorModes.RATE) {
-           return num / 100;
+           return num / TTEN;
         }
         if (newMode == MonoOperatorModes.ABS) {
             return Math.abs(num);
