@@ -13,10 +13,16 @@ import static java.lang.Math.pow;
 public class Calculator {
 
     public enum BiOperatorModes {
+        /**
+         * BiOperatorModes
+         */
         NORMAL, ADD, MINUS, MULTIPLY, DIVIDE, XPOWEROFY
     }
 
     public enum MonoOperatorModes {
+        /**
+         * MonoOperatorModes
+         */
         SQUARE, SQUAREROOT, ONEDEVIDEDBY, COS, SIN, TAN, LOG, RATE, ABS
     }
 
@@ -66,10 +72,16 @@ public class Calculator {
     }
 
     public Double calculateEqual(final Double num) {
+        /**
+         *
+         */
         return calculateBi(BiOperatorModes.NORMAL, num);
     }
 
     public Double reset() {
+        /**
+         *
+         */
         num2 = 0.0;
         num1 = 0.0;
         mode = BiOperatorModes.NORMAL;
@@ -78,6 +90,9 @@ public class Calculator {
     }
 
     public Double calculateMono(final MonoOperatorModes newMode, final Double num) {
+        /**
+         *
+         */
         if (newMode == MonoOperatorModes.SQUARE) {
             return num * num;
         }
