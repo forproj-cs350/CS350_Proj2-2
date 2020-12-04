@@ -13,15 +13,15 @@ import static java.lang.Math.pow;
 public class Calculator {
 
     public enum BiOperatorModes {
-        /**
-         * BiOperatorModes
+        /***
+         * BiOperatorModes.
          */
         NORMAL, ADD, MINUS, MULTIPLY, DIVIDE, XPOWEROFY
     }
 
     public enum MonoOperatorModes {
-        /**
-         * MonoOperatorModes
+        /***
+         * MonoOperatorModes.
          */
         SQUARE, SQUAREROOT, ONEDEVIDEDBY, COS, SIN, TAN, LOG, RATE, ABS
     }
@@ -72,15 +72,15 @@ public class Calculator {
     }
 
     public Double calculateEqual(final Double num) {
-        /**
-         *
+        /***
+         * calculateEqual.
          */
         return calculateBi(BiOperatorModes.NORMAL, num);
     }
 
     public Double reset() {
-        /**
-         *
+        /***
+         * calculateEqual.
          */
         num2 = 0.0;
         num1 = 0.0;
