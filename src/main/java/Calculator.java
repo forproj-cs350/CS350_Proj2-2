@@ -115,11 +115,14 @@ public class Calculator {
         if (newMode == MonoOperatorModes.SIN) {
             return Math.sin(num);
         }
+
+        final int MOMO = 90;
+
         if (newMode == MonoOperatorModes.TAN) {
-            if (num == 0 || num % 180 == 0) {
+            if (num == 0 || num % (MOMO * 2) == 0) {
                 return 0.0;
             }
-            if (num % 90 == 0 && num % 180 != 0) {
+            if (num % MOMO == 0 && num % (MOMO * 2) != 0) {
                 return NaN;
             }
 
