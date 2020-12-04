@@ -12,8 +12,7 @@ public class SimpleJavaCalculator {
         try {
             UI uiCal = new UI();
             uiCal.init();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }

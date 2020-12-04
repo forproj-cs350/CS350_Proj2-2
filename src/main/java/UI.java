@@ -108,7 +108,7 @@ public class UI implements ActionListener {
 
       for (int i = 0; i < 10; i++) {
          but[i].setFont(font);
-      }      
+      }
       butAdd.setFont(font);
       butMinus.setFont(font);
       butMultiply.setFont(font);
@@ -125,12 +125,12 @@ public class UI implements ActionListener {
       butrate.setFont(font);
       butabs.setFont(font);
       butCancel.setFont(font);
-      butBinary.setFont(font); 
-      
+      butBinary.setFont(font);
+
       panel.add(Box.createHorizontalStrut(100));
       panelSub1.add(text);
       panel.add(panelSub1);
-      
+
       panelSub2.add(but[1]);
       panelSub2.add(but[2]);
       panelSub2.add(but[3]);
@@ -138,15 +138,15 @@ public class UI implements ActionListener {
       panelSub2.add(butAdd);
       panelSub2.add(butMinus);
       panel.add(panelSub2);
-      
+
       panelSub3.add(but[4]);
       panelSub3.add(but[5]);
       panelSub3.add(but[6]);
       panelSub3.add(Box.createHorizontalStrut(15));
       panelSub3.add(butMultiply);
-      panelSub3.add(butDivide);      
+      panelSub3.add(butDivide);
       panel.add(panelSub3);
-      
+
       panelSub4.add(but[7]);
       panelSub4.add(but[8]);
       panelSub4.add(but[9]);
@@ -154,31 +154,31 @@ public class UI implements ActionListener {
       panelSub4.add(butEqual);
       panelSub4.add(butCancel);
       panel.add(panelSub4);
-      
+
       panelSub5.add(but[0]);
       panelSub5.add(Box.createHorizontalStrut(210));
       panel.add(panelSub5);
-      
+
       panelSub6.add(butSquare);
       panelSub6.add(butSquareRoot);
       panelSub6.add(butOneDevidedBy);
       panelSub6.add(butxpowerofy);
       panel.add(panelSub6);
-      
+
       panelSub7.add(butCos);
       panelSub7.add(butSin);
       panelSub7.add(butTan);
       panel.add(panelSub7);
-      
+
       panelSub8.add(butlog);
       panelSub8.add(butrate);
       panelSub8.add(butabs);
       panelSub8.add(butBinary);
       panel.add(panelSub8);
-      
+
       for (int i = 0; i < 10; i++) {
          but[i].addActionListener(this);
-      }      
+      }
       butAdd.addActionListener(this);
       butMinus.addActionListener(this);
       butMultiply.addActionListener(this);
@@ -194,37 +194,37 @@ public class UI implements ActionListener {
       butrate.addActionListener(this);
       butabs.addActionListener(this);
       butBinary.addActionListener(this);
-      
+
       butEqual.addActionListener(this);
       butCancel.addActionListener(this);
-      
+
       frame.add(panel);
    }
-   
+
    @Override
    public void actionPerformed(final ActionEvent e) {
       final Object source = e.getSource();
-      
+
       for (int i = 0; i < 10; i++) {
          if (source == but[i]) {
             text.replaceSelection(buttonValue[i]);
             return;
          }
       }
-      
+
       if (source == butAdd) {
          writer(calc.calculateBi(Calculator.BiOperatorModes.ADD, reader()));
       }
-      
+
       if (source == butMinus) {
          writer(calc.calculateBi(Calculator.BiOperatorModes.MINUS, reader()));
       }
-      
+
       if (source == butMultiply) {
          writer(calc.calculateBi(Calculator.BiOperatorModes.MULTIPLY,
                                  reader()));
       }
-      
+
       if (source == butDivide) {
          writer(calc
                    .calculateBi(Calculator.BiOperatorModes.DIVIDE, reader()));
@@ -233,32 +233,32 @@ public class UI implements ActionListener {
          writer(calc
                    .calculateBi(Calculator.BiOperatorModes.XPOWEROFY, reader()));
       }
-      
+
       if (source == butSquare) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.SQUARE,
                                    reader()));
       }
-      
+
       if (source == butSquareRoot) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.SQUAREROOT,
                                    reader()));
       }
-      
+
       if (source == butOneDevidedBy) {
          writer(calc.calculateMono(
                                    Calculator.MonoOperatorModes.ONEDEVIDEDBY, reader()));
       }
-      
+
       if (source == butCos) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.COS,
                                    reader()));
       }
-      
+
       if (source == butSin) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.SIN,
                                    reader()));
       }
-      
+
       if (source == butTan) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.TAN,
                                    reader()));
@@ -274,22 +274,22 @@ public class UI implements ActionListener {
       if (source == butabs) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.ABS, reader()));
       }
-      
+
       if (source == butEqual) {
          writer(calc.calculateEqual(reader()));
       }
-      
+
       if (source == butCancel) {
          writer(calc.reset());
       }
-      
+
       if (source == butBinary) {
          parsetoBinary();
       }
-      
+
       text.selectAll();
    }
-   
+
    private void parsetoBinary() {
       try {
          text.setText("" + Long.toBinaryString(Long.parseLong(text.getText())));
@@ -297,16 +297,16 @@ public class UI implements ActionListener {
          System.err.println("Error while parse to binary." + ex.toString());
       }
    }
-   
+
    public Double reader() {
       Double num;
       String str;
       str = text.getText();
       num = Double.valueOf(str);
-      
+
       return num;
    }
-   
+
    public void writer(final Double num) {
       if (Double.isNaN(num)) {
          text.setText("");
