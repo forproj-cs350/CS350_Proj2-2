@@ -22,9 +22,9 @@ import javax.swing.BoxLayout;
 import java.io.*;
 
 public class UI implements ActionListener {
-   
+
    private final JFrame frame;
-   
+
    private final JPanel panel;
    private final JPanel panelSub1;
    private final JPanel panelSub2;
@@ -34,24 +34,24 @@ public class UI implements ActionListener {
    private final JPanel panelSub6;
    private final JPanel panelSub7;
    private final JPanel panelSub8;
-   
+
    private final JTextArea text;
    private final JButton but[], butAdd, butMinus, butMultiply, butDivide,
       butEqual, butCancel, butSquareRoot, butSquare, butOneDevidedBy,
       butCos, butSin, butTan, butxpowerofy, butlog, butrate, butabs, butBinary;
    private final Calculator calc;
-   
+
    private final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
       "7", "8", "9"};
-   
+
    private final Font font;
    private final Font textFont;
 
-   
+
    public UI() throws IOException {
       frame = new JFrame("Calculator PH");
 
-      
+
       panel = new JPanel();
       panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
       panelSub1 = new JPanel(new FlowLayout());
@@ -62,50 +62,50 @@ public class UI implements ActionListener {
       panelSub6 = new JPanel(new FlowLayout());
       panelSub7 = new JPanel(new FlowLayout());
       panelSub8 = new JPanel(new FlowLayout());
-      
+
       font = new Font("Consolas", Font.PLAIN, 18);
-      
+
       text = new JTextArea(1, 30);
-      
+
       textFont = new Font("Consolas", Font.BOLD, 24);
-      
-      but = new JButton[10];      
+
+      but = new JButton[10];
       for (int i = 0; i < 10; i++) {
          but[i] = new JButton(String.valueOf(i));
-      }      
-      butAdd = new JButton("+");      
-      butMinus = new JButton("-");      
-      butMultiply = new JButton("*");      
-      butDivide = new JButton("/");      
-      butEqual = new JButton("=");      
-      butSquareRoot = new JButton("sqrt");      
-      butSquare = new JButton("x*x");      
-      butOneDevidedBy = new JButton("1/x");      
-      butCos = new JButton("Cos");      
-      butSin = new JButton("Sin");      
-      butTan = new JButton("Tan");      
-      butxpowerofy = new JButton("x^y");      
-      butlog = new JButton("log10(x)");      
-      butrate = new JButton("x%");      
-      butabs = new JButton("abs(x)");      
-      butCancel = new JButton("C");      
-      butBinary = new JButton("Bin");      
-      
+      }
+      butAdd = new JButton("+");
+      butMinus = new JButton("-");
+      butMultiply = new JButton("*");
+      butDivide = new JButton("/");
+      butEqual = new JButton("=");
+      butSquareRoot = new JButton("sqrt");
+      butSquare = new JButton("x*x");
+      butOneDevidedBy = new JButton("1/x");
+      butCos = new JButton("Cos");
+      butSin = new JButton("Sin");
+      butTan = new JButton("Tan");
+      butxpowerofy = new JButton("x^y");
+      butlog = new JButton("log10(x)");
+      butrate = new JButton("x%");
+      butabs = new JButton("abs(x)");
+      butCancel = new JButton("C");
+      butBinary = new JButton("Bin");
+
       calc = new Calculator();
-      
+
    }
-   
-   public void init() {      
+
+   public void init() {
       frame.setSize(450, 450);
       frame.setVisible(true);
-      frame.setLocationRelativeTo(null); 
+      frame.setLocationRelativeTo(null);
       frame.setResizable(false);
-      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-      
+
       text.setFont(textFont);
       text.setEditable(false);
-      
+
       for (int i = 0; i < 10; i++) {
          but[i].setFont(font);
       }      
