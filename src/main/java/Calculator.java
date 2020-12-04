@@ -95,7 +95,8 @@ public class Calculator {
         return NaN;
     }
 
-    public Double calculateMono(final MonoOperatorModes newMode, final Double num) {
+    public Double calculateMono(final MonoOperatorModes newMode,
+                                final Double num) {
         /**
          *
          */
