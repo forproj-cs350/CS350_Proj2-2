@@ -121,8 +121,10 @@ public class UI implements ActionListener {
 
       textFont = new Font("Consolas", Font.BOLD, 24);
 
-      but = new JButton[10];
-      for (int i = 0; i < 10; i++) {
+      final int TEN = 10;
+
+      but = new JButton[TEN];
+      for (int i = 0; i < TEN; i++) {
          but[i] = new JButton(String.valueOf(i));
       }
       butAdd = new JButton("+");
@@ -151,7 +153,9 @@ public class UI implements ActionListener {
       /***
        * init.
        */
-      frame.setSize(450, 450);
+      final int TT = 450;
+
+      frame.setSize(TT, TT);
       frame.setVisible(true);
       frame.setLocationRelativeTo(null);
       frame.setResizable(false);
@@ -161,7 +165,9 @@ public class UI implements ActionListener {
       text.setFont(textFont);
       text.setEditable(false);
 
-      for (int i = 0; i < 10; i++) {
+      final int TEN = 10;
+
+      for (int i = 0; i < TEN; i++) {
          but[i].setFont(font);
       }
       butAdd.setFont(font);
@@ -182,7 +188,7 @@ public class UI implements ActionListener {
       butCancel.setFont(font);
       butBinary.setFont(font);
 
-      panel.add(Box.createHorizontalStrut(100));
+      panel.add(Box.createHorizontalStrut(TEN*TEN));
       panelSub1.add(text);
       panel.add(panelSub1);
 
