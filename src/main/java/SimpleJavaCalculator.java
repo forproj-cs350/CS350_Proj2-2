@@ -8,7 +8,7 @@
 
 public class SimpleJavaCalculator {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         try {
             UI uiCal = new UI();
             uiCal.init();

@@ -202,7 +202,7 @@ public class UI implements ActionListener {
    }
    
    @Override
-   public void actionPerformed(ActionEvent e) {
+   public void actionPerformed(final ActionEvent e) {
       final Object source = e.getSource();
       
       for (int i = 0; i < 10; i++) {
