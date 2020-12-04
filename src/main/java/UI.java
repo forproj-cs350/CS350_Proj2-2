@@ -63,11 +63,11 @@ public class UI implements ActionListener {
       panelSub7 = new JPanel(new FlowLayout());
       panelSub8 = new JPanel(new FlowLayout());
       
-      font = new Font("Consolas",Font.PLAIN, 18);
+      font = new Font("Consolas", Font.PLAIN, 18);
       
       text = new JTextArea(1, 30);
       
-      textFont = new Font("Consolas",Font.BOLD, 24);
+      textFont = new Font("Consolas", Font.BOLD, 24);
       
       but = new JButton[10];      
       for (int i = 0; i < 10; i++) {
@@ -271,7 +271,7 @@ public class UI implements ActionListener {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.rate,
                                    reader()));
       }
-      if(source == butabs){
+      if (source == butabs) {
          writer(calc.calculateMono(Calculator.MonoOperatorModes.abs, reader()));
       }
       

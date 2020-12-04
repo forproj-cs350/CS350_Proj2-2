@@ -13,11 +13,11 @@ import static java.lang.Math.pow;
 public class Calculator {
 
     public enum BiOperatorModes {
-        normal, add, minus, multiply, divide , xpowerofy 
+        normal, add, minus, multiply, divide, xpowerofy 
     }
 
     public enum MonoOperatorModes {
-        square, squareRoot, oneDevidedBy, cos, sin, tan ,log , rate, abs
+        square, squareRoot, oneDevidedBy, cos, sin, tan, log, rate, abs
     }
 
     private Double num1, num2;
@@ -44,7 +44,7 @@ public class Calculator {
             return num1 / num2;
         }
         if (mode == BiOperatorModes.xpowerofy) {
-            return pow(num1,num2);
+            return pow(num1, num2);
         }
 
         // never reach
@@ -109,7 +109,7 @@ public class Calculator {
         if (newMode == MonoOperatorModes.rate) {
            return num / 100;
         }
-        if (newMode == MonoOperatorModes.abs){
+        if (newMode == MonoOperatorModes.abs) {
             return Math.abs(num);
         }
 
