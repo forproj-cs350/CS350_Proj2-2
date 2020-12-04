@@ -24,31 +24,83 @@ import java.io.*;
 public class UI implements ActionListener {
 
    private final JFrame frame;
+   /***
+    * JFrame.
+    */
 
    private final JPanel panel;
+   /***
+    * JPanel.
+    */
    private final JPanel panelSub1;
+   /***
+    * JPanel.
+    */
    private final JPanel panelSub2;
+   /***
+    * JPanel.
+    */
    private final JPanel panelSub3;
+   /***
+    * JPanel.
+    */
    private final JPanel panelSub4;
+   /***
+    * JPanel.
+    */
    private final JPanel panelSub5;
+   /***
+    * JPanel.
+    */
    private final JPanel panelSub6;
+   /***
+    * JPanel.
+    */
    private final JPanel panelSub7;
+   /***
+    * JPanel.
+    */
    private final JPanel panelSub8;
+   /***
+    * JPanel.
+    */
 
    private final JTextArea text;
+   /***
+    * JTextArea.
+    */
    private final JButton but[], butAdd, butMinus, butMultiply, butDivide,
       butEqual, butCancel, butSquareRoot, butSquare, butOneDevidedBy,
       butCos, butSin, butTan, butxpowerofy, butlog, butrate, butabs, butBinary;
+   /***
+    * JButton.
+    */
    private final Calculator calc;
+   /***
+    * Calculator calc.
+    */
 
    private final String[] buttonValue = {"0", "1", "2", "3", "4", "5", "6",
       "7", "8", "9"};
+   /***
+    * buttonValue.
+    */
 
    private final Font font;
+   /***
+    * Font font.
+    */
    private final Font textFont;
+   /***
+    * Font textFont.
+    * @throws IOException
+    */
 
 
    public UI() throws IOException {
+      /***
+       * UI.
+       */
       frame = new JFrame("Calculator PH");
 
 
@@ -96,6 +148,9 @@ public class UI implements ActionListener {
    }
 
    public void init() {
+      /***
+       * init.
+       */
       frame.setSize(450, 450);
       frame.setVisible(true);
       frame.setLocationRelativeTo(null);
@@ -299,6 +354,9 @@ public class UI implements ActionListener {
    }
 
    public Double reader() {
+      /***
+       * reader.
+       */
       Double num;
       String str;
       str = text.getText();
@@ -308,6 +366,9 @@ public class UI implements ActionListener {
    }
 
    public void writer(final Double num) {
+      /***
+       * writer.
+       */
       if (Double.isNaN(num)) {
          text.setText("");
       } else {
