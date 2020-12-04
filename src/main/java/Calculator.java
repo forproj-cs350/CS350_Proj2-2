@@ -13,11 +13,11 @@ import static java.lang.Math.pow;
 public class Calculator {
 
     public enum BiOperatorModes {
-        NORMAL, ADD, Minus, Multiply, Divide, Xpowerofy
+        NORMAL, ADD, MINUS, MULTIPLY, DIVIDE, XPOWEROFY
     }
 
     public enum MonoOperatorModes {
-        Square, SquareRoot, OneDevidedBy, Cos, Sin, Tan, Log, Rate, Abs
+        SQUARE, SQUAREROOT, ONEDEVIDEDBY, COS, SIN, TAN, LOG, RATE, ABS
     }
 
     private Double num1, num2;
@@ -34,16 +34,16 @@ public class Calculator {
 
             return num1;
         }
-        if (mode == BiOperatorModes.Minus) {
+        if (mode == BiOperatorModes.MINUS) {
             return num1 - num2;
         }
-        if (mode == BiOperatorModes.Multiply) {
+        if (mode == BiOperatorModes.MULTIPLY) {
             return num1 * num2;
         }
-        if (mode == BiOperatorModes.Divide) {
+        if (mode == BiOperatorModes.DIVIDE) {
             return num1 / num2;
         }
-        if (mode == BiOperatorModes.Xpowerofy) {
+        if (mode == BiOperatorModes.XPOWEROFY) {
             return pow(num1, num2);
         }
 
@@ -78,22 +78,22 @@ public class Calculator {
     }
 
     public Double calculateMono(MonoOperatorModes newMode, Double num) {
-        if (newMode == MonoOperatorModes.Square) {
+        if (newMode == MonoOperatorModes.SQUARE) {
             return num * num;
         }
-        if (newMode == MonoOperatorModes.SquareRoot) {
+        if (newMode == MonoOperatorModes.SQUAREROOT) {
             return Math.sqrt(num);
         }
-        if (newMode == MonoOperatorModes.OneDevidedBy) {
+        if (newMode == MonoOperatorModes.ONEDEVIDEDBY) {
             return 1 / num;
         }
-        if (newMode == MonoOperatorModes.Cos) {
+        if (newMode == MonoOperatorModes.COS) {
             return Math.cos(num);
         }
-        if (newMode == MonoOperatorModes.Sin) {
+        if (newMode == MonoOperatorModes.SIN) {
             return Math.sin(num);
         }
-        if (newMode == MonoOperatorModes.Tan) {
+        if (newMode == MonoOperatorModes.TAN) {
             if (num == 0 || num % 180 == 0) {
                 return 0.0;
             }
@@ -103,13 +103,13 @@ public class Calculator {
 
             return Math.tan(num);
         }
-        if (newMode == MonoOperatorModes.Log) {
+        if (newMode == MonoOperatorModes.LOG) {
             return log10(num);
         }
-        if (newMode == MonoOperatorModes.Rate) {
+        if (newMode == MonoOperatorModes.RATE) {
            return num / 100;
         }
-        if (newMode == MonoOperatorModes.Abs) {
+        if (newMode == MonoOperatorModes.ABS) {
             return Math.abs(num);
         }
 

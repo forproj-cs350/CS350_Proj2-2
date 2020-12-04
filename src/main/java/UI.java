@@ -217,62 +217,62 @@ public class UI implements ActionListener {
       }
       
       if (source == butMinus) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.Minus, reader()));
+         writer(calc.calculateBi(Calculator.BiOperatorModes.MINUS, reader()));
       }
       
       if (source == butMultiply) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.Multiply,
+         writer(calc.calculateBi(Calculator.BiOperatorModes.MULTIPLY,
                                  reader()));
       }
       
       if (source == butDivide) {
          writer(calc
-                   .calculateBi(Calculator.BiOperatorModes.Divide, reader()));
+                   .calculateBi(Calculator.BiOperatorModes.DIVIDE, reader()));
       }
       if (source == butxpowerofy) {
          writer(calc
-                   .calculateBi(Calculator.BiOperatorModes.Xpowerofy, reader()));
+                   .calculateBi(Calculator.BiOperatorModes.XPOWEROFY, reader()));
       }
       
       if (source == butSquare) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.Square,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.SQUARE,
                                    reader()));
       }
       
       if (source == butSquareRoot) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.SquareRoot,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.SQUAREROOT,
                                    reader()));
       }
       
       if (source == butOneDevidedBy) {
          writer(calc.calculateMono(
-                                   Calculator.MonoOperatorModes.OneDevidedBy, reader()));
+                                   Calculator.MonoOperatorModes.ONEDEVIDEDBY, reader()));
       }
       
       if (source == butCos) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.Cos,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.COS,
                                    reader()));
       }
       
       if (source == butSin) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.Sin,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.SIN,
                                    reader()));
       }
       
       if (source == butTan) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.Tan,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.TAN,
                                    reader()));
       }
       if (source == butlog) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.Log,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.LOG,
                                    reader()));
       }
       if (source == butrate) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.Rate,
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.RATE,
                                    reader()));
       }
       if (source == butabs) {
-         writer(calc.calculateMono(Calculator.MonoOperatorModes.Abs, reader()));
+         writer(calc.calculateMono(Calculator.MonoOperatorModes.ABS, reader()));
       }
       
       if (source == butEqual) {
