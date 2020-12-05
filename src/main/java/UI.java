@@ -64,7 +64,7 @@ public class UI implements ActionListener {
    /***
     * JTextArea.
     */
-   private final JButton but[];
+   private final JButton[] but;
    /**
     * JButton.
     */
