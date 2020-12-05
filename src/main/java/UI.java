@@ -15,6 +15,9 @@ import java.io.*;
 
 public class UI implements ActionListener {
 
+   /**
+    * jframe frame.
+    */
    private final JFrame frame;
    /***
     * JFrame.
@@ -90,9 +93,6 @@ public class UI implements ActionListener {
 
 
    public UI() throws IOException {
-      /***
-       * UI.
-       */
       frame = new JFrame("Calculator PH");
 
 
@@ -144,10 +144,10 @@ public class UI implements ActionListener {
 
    }
 
+   /**
+    * init.
+    */
    public void init() {
-      /***
-       * init.
-       */
       final int tft = 450;
 
       frame.setSize(tft, tft);
@@ -356,10 +356,11 @@ public class UI implements ActionListener {
       }
    }
 
+   /**
+    * reader.
+    * @return
+    */
    public Double reader() {
-      /***
-       * reader.
-       */
       Double num;
       String str;
       str = text.getText();
@@ -368,10 +369,11 @@ public class UI implements ActionListener {
       return num;
    }
 
+   /**
+    * writer.
+    * @param num
+    */
    public void writer(final Double num) {
-      /***
-       * writer.
-       */
       if (Double.isNaN(num)) {
          text.setText("");
       } else {

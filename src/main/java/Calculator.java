@@ -18,8 +18,17 @@ public class Calculator {
         SQUARE, SQUAREROOT, ONEDEVIDEDBY, COS, SIN, TAN, LOG, RATE, ABS
     }
 
+    /**
+     * hello.
+     */
     private Double num1;
+    /**
+     * hello.
+     */
     private Double num2;
+    /**
+     * hello.
+     */
     private BiOperatorModes mode = BiOperatorModes.NORMAL;
 
     /**
