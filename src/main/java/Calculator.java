@@ -29,7 +29,7 @@ public class Calculator {
     private Double num1;
     private Double num2;
     /***
-     * private num1 num2.
+     * private num2.
      */
     private BiOperatorModes mode = BiOperatorModes.NORMAL;
     /***
@@ -37,6 +37,9 @@ public class Calculator {
      */
 
     private Double calculateBiImpl() {
+        /***
+         * calculateBiImpl.
+         */
         if (mode == BiOperatorModes.NORMAL) {
             return num2;
         }
@@ -65,6 +68,9 @@ public class Calculator {
     }
 
     public Double calculateBi(final BiOperatorModes newMode, final Double num) {
+        /***
+         * calculateBi.
+         */
         if (mode == BiOperatorModes.NORMAL) {
             num2 = 0.0;
             num1 = num;
