@@ -117,13 +117,13 @@ public class Calculator {
             return Math.sin(num);
         }
 
-        final int MOMO = 90;
+        final int momo = 90;
 
         if (newMode == MonoOperatorModes.TAN) {
-            if (num == 0 || num % (MOMO * 2) == 0) {
+            if (num == 0 || num % (momo * 2) == 0) {
                 return 0.0;
             }
-            if (num % MOMO == 0 && num % (MOMO * 2) != 0) {
+            if (num % momo == 0 && num % (momo * 2) != 0) {
                 return NaN;
             }
 
@@ -133,10 +133,10 @@ public class Calculator {
             return log10(num);
         }
 
-        final int TTEN = 100;
+        final int tten = 100;
 
         if (newMode == MonoOperatorModes.RATE) {
-           return num / TTEN;
+           return num / tten;
         }
         if (newMode == MonoOperatorModes.ABS) {
             return Math.abs(num);
