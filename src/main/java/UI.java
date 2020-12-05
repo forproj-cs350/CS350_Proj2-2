@@ -65,22 +65,73 @@ public class UI implements ActionListener {
     * JTextArea.
     */
    private final JButton but[];
+   /**
+    * JButton.
+    */
    private final JButton butAdd;
+   /**
+    * JButton.
+    */
    private final JButton butMinus;
+   /**
+    * JButton.
+    */
    private final JButton butMultiply;
+   /**
+    * JButton.
+    */
    private final JButton butDivide;
+   /**
+    * JButton.
+    */
    private final JButton butEqual;
+   /**
+    * JButton.
+    */
    private final JButton butCancel;
+   /**
+    * JButton.
+    */
    private final JButton butSquareRoot;
+   /**
+    * JButton.
+    */
    private final JButton butSquare;
+   /**
+    * JButton.
+    */
    private final JButton butOneDevidedBy;
+   /**
+    * JButton.
+    */
    private final JButton butCos;
+   /**
+    * JButton.
+    */
    private final JButton butSin;
+   /**
+    * JButton.
+    */
    private final JButton butTan;
+   /**
+    * JButton.
+    */
    private final JButton butxpowerofy;
+   /**
+    * JButton.
+    */
    private final JButton butlog;
+   /**
+    * JButton.
+    */
    private final JButton butrate;
+   /**
+    * JButton.
+    */
    private final JButton butabs;
+   /**
+    * JButton.
+    */
    private final JButton butBinary;
    /***
     * JButton.
