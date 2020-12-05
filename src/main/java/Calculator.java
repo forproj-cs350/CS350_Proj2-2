@@ -26,7 +26,8 @@ public class Calculator {
         SQUARE, SQUAREROOT, ONEDEVIDEDBY, COS, SIN, TAN, LOG, RATE, ABS
     }
 
-    private Double num1, num2;
+    private Double num1;
+    private Double num2;
     /***
      * private num1 num2.
      */
