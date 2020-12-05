@@ -28,13 +28,7 @@ public class Calculator {
 
     private Double num1;
     private Double num2;
-    /***
-     * private num2.
-     */
     private BiOperatorModes mode = BiOperatorModes.NORMAL;
-    /***
-     * BiOperatorModes mode.
-     */
 
     /**
      * calculateBiImpl.
@@ -68,10 +62,13 @@ public class Calculator {
         throw new Error();
     }
 
+    /**
+     * calculateBi.
+     * @param newMode
+     * @param num
+     * @return  calculateBi.
+     */
     public Double calculateBi(final BiOperatorModes newMode, final Double num) {
-        /***
-         * calculateBi.
-         */
         if (mode == BiOperatorModes.NORMAL) {
             num2 = 0.0;
             num1 = num;
@@ -85,17 +82,20 @@ public class Calculator {
         }
     }
 
+    /**
+     * calculateEqual.
+     * @param num
+     * @return  calculateEqual.
+     */
     public Double calculateEqual(final Double num) {
-        /***
-         * calculateEqual.
-         */
         return calculateBi(BiOperatorModes.NORMAL, num);
     }
 
+    /**
+     * reset.
+     * @return  reset.
+     */
     public Double reset() {
-        /***
-         * calculateEqual.
-         */
         num2 = 0.0;
         num1 = 0.0;
         mode = BiOperatorModes.NORMAL;
@@ -103,11 +103,14 @@ public class Calculator {
         return NaN;
     }
 
+    /**
+     * calculateMono.
+     * @param newMode
+     * @param num
+     * @return  calculateMono.
+     */
     public Double calculateMono(final MonoOperatorModes newMode,
                                 final Double num) {
-        /**
-         *
-         */
         if (newMode == MonoOperatorModes.SQUARE) {
             return num * num;
         }
