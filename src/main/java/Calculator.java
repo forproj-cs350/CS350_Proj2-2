@@ -1,11 +1,3 @@
-/**
- * @name        Simple Java Calculator
- * @file        Calculator.java
- * @author      SORIA Pierre-Henry
- * @copyright   Copyright Pierre-Henry SORIA, All Rights Reserved.
- * @license     Apache (http://www.apache.org/licenses/LICENSE-2.0)
- */
-
 import static java.lang.Double.NaN;
 import static java.lang.Math.log10;
 import static java.lang.Math.pow;

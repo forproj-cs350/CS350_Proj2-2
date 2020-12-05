@@ -1,11 +1,3 @@
-/**
- * @name        Simple Java Calculator
- * @file        UI.java
- * @author      SORIA Pierre-Henry
- * @copyright   Copyright Pierre-Henry SORIA, All Rights Reserved.
- * @license     Apache (http://www.apache.org/licenses/LICENSE-2.0)
- */
-
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
