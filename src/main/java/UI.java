@@ -252,10 +252,12 @@ public class UI implements ActionListener {
       panelSub1.add(text);
       panel.add(panelSub1);
 
+      final int three = 3;
+      final int fty = 15;
       panelSub2.add(but[1]);
       panelSub2.add(but[2]);
-      panelSub2.add(but[3]);
-      panelSub2.add(Box.createHorizontalStrut(15));
+      panelSub2.add(but[three]);
+      panelSub2.add(Box.createHorizontalStrut(fty));
       panelSub2.add(butAdd);
       panelSub2.add(butMinus);
       panel.add(panelSub2);
