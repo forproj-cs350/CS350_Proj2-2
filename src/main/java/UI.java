@@ -115,19 +115,19 @@ public class UI implements ActionListener {
       panelSub7 = new JPanel(new FlowLayout());
       panelSub8 = new JPanel(new FlowLayout());
 
-      final int SP = 18;
-      font = new Font("Consolas", Font.PLAIN, SP);
+      final int sspp = 18;
+      font = new Font("Consolas", Font.PLAIN, sspp);
 
-      final int TY = 30;
-      text = new JTextArea(1, TY);
+      final int ttyy = 30;
+      text = new JTextArea(1, ttyy);
 
-      final int TF = 24;
-      textFont = new Font("Consolas", Font.BOLD, TF);
+      final int ttff = 24;
+      textFont = new Font("Consolas", Font.BOLD, ttff);
 
-      final int TEN = 10;
+      final int tteenn = 10;
 
-      but = new JButton[TEN];
-      for (int i = 0; i < TEN; i++) {
+      but = new JButton[tteenn];
+      for (int i = 0; i < tteenn; i++) {
          but[i] = new JButton(String.valueOf(i));
       }
       butAdd = new JButton("+");
@@ -156,9 +156,9 @@ public class UI implements ActionListener {
       /***
        * init.
        */
-      final int TT = 450;
+      final int tft = 450;
 
-      frame.setSize(TT, TT);
+      frame.setSize(tft, tft);
       frame.setVisible(true);
       frame.setLocationRelativeTo(null);
       frame.setResizable(false);
@@ -168,8 +168,8 @@ public class UI implements ActionListener {
       text.setFont(textFont);
       text.setEditable(false);
 
-      final int TEN = 10;
-      for (int i = 0; i < TEN; i++) {
+      final int tteenn = 10;
+      for (int i = 0; i < tteenn; i++) {
          but[i].setFont(font);
       }
       butAdd.setFont(font);
@@ -190,7 +190,7 @@ public class UI implements ActionListener {
       butCancel.setFont(font);
       butBinary.setFont(font);
 
-      panel.add(Box.createHorizontalStrut(TEN*TEN));
+      panel.add(Box.createHorizontalStrut(tteenn*tteenn));
       panelSub1.add(text);
       panel.add(panelSub1);
 
@@ -239,7 +239,7 @@ public class UI implements ActionListener {
       panelSub8.add(butBinary);
       panel.add(panelSub8);
 
-      for (int i = 0; i < TEN; i++) {
+      for (int i = 0; i < tteenn; i++) {
          but[i].addActionListener(this);
       }
       butAdd.addActionListener(this);
@@ -267,9 +267,9 @@ public class UI implements ActionListener {
    @Override
    public void actionPerformed(final ActionEvent e) {
       final Object source = e.getSource();
-      final int TEN = 10;
+      final int tteenn = 10;
 
-      for (int i = 0; i < TEN; i++) {
+      for (int i = 0; i < tteenn; i++) {
          if (source == but[i]) {
             text.replaceSelection(buttonValue[i]);
             return;
