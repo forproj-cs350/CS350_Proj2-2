@@ -26,10 +26,6 @@
         <java.version>1.8</java.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
-        <jacoco.version>0.8.6</jacoco.version>
-        <sonar.coverage.jacoco.xmlReportPaths>
-            ${project.basedir}/../path_to_module_with_report/target/site/jacoco-aggregate/jacoco.xml
-        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <build>
@@ -46,7 +42,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.6</version>
+                <version>0.7.9</version>
                 <configuration>
                     <dataFile>/target/coverage-reports/jacoco-unit.exec</dataFile>
                 </configuration>
