@@ -36,7 +36,10 @@ public class Calculator {
      * BiOperatorModes mode.
      */
 
-    /** {@inheritDoc} */
+    /**
+     * calculateBiImpl.
+     * @return  calculateBiImpl.
+     */
     private Double calculateBiImpl() {
         if (mode == BiOperatorModes.NORMAL) {
             return num2;
