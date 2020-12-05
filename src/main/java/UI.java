@@ -276,10 +276,10 @@ public class UI implements ActionListener {
          }
       }
 
-      final JButton sourcelist[] = {butAdd, butMinus, butMultiply, butDivide, butxpowerofy};
+      JButton[] sourcelist = {butAdd, butMinus, butMultiply, butDivide, butxpowerofy};
 
       if (sourcelist.indexOf(source) != -1) {
-         
+
       }
 
       if (source == butAdd) {
