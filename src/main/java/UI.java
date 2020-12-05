@@ -64,9 +64,24 @@ public class UI implements ActionListener {
    /***
     * JTextArea.
     */
-   private final JButton but[], butAdd, butMinus, butMultiply, butDivide,
-      butEqual, butCancel, butSquareRoot, butSquare, butOneDevidedBy,
-      butCos, butSin, butTan, butxpowerofy, butlog, butrate, butabs, butBinary;
+   private final JButton but[];
+   private final JButton butAdd;
+   private final JButton butMinus;
+   private final JButton butMultiply;
+   private final JButton butDivide;
+   private final JButton butEqual;
+   private final JButton butCancel;
+   private final JButton butSquareRoot;
+   private final JButton butSquare;
+   private final JButton butOneDevidedBy;
+   private final JButton butCos;
+   private final JButton butSin;
+   private final JButton butTan;
+   private final JButton butxpowerofy;
+   private final JButton butlog;
+   private final JButton butrate;
+   private final JButton butabs;
+   private final JButton butBinary;
    /***
     * JButton.
     */
@@ -358,7 +373,7 @@ public class UI implements ActionListener {
 
    /**
     * reader.
-    * @return
+    * @return reader.
     */
    public Double reader() {
       Double num;
