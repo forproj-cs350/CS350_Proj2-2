@@ -262,15 +262,17 @@ public class UI implements ActionListener {
       panelSub2.add(butMinus);
       panel.add(panelSub2);
 
+      final int five = 5;
       panelSub3.add(but[2 * 2]);
-      panelSub3.add(but[5]);
+      panelSub3.add(but[five]);
       panelSub3.add(but[2 * three]);
       panelSub3.add(Box.createHorizontalStrut(fty));
       panelSub3.add(butMultiply);
       panelSub3.add(butDivide);
       panel.add(panelSub3);
 
-      panelSub4.add(but[7]);
+      final int seven = 7;
+      panelSub4.add(but[seven]);
       panelSub4.add(but[2 * 2 * 2]);
       panelSub4.add(but[three * three]);
       panelSub4.add(Box.createHorizontalStrut(fty));
@@ -278,8 +280,9 @@ public class UI implements ActionListener {
       panelSub4.add(butCancel);
       panel.add(panelSub4);
 
+      final int toz = 210;
       panelSub5.add(but[0]);
-      panelSub5.add(Box.createHorizontalStrut(210));
+      panelSub5.add(Box.createHorizontalStrut(toz));
       panel.add(panelSub5);
 
       panelSub6.add(butSquare);
