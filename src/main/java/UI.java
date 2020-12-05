@@ -248,7 +248,7 @@ public class UI implements ActionListener {
       butCancel.setFont(font);
       butBinary.setFont(font);
 
-      panel.add(Box.createHorizontalStrut(tteenn*tteenn));
+      panel.add(Box.createHorizontalStrut(tteenn * tteenn));
       panelSub1.add(text);
       panel.add(panelSub1);
 
@@ -262,18 +262,18 @@ public class UI implements ActionListener {
       panelSub2.add(butMinus);
       panel.add(panelSub2);
 
-      panelSub3.add(but[4]);
+      panelSub3.add(but[2 * 2]);
       panelSub3.add(but[5]);
-      panelSub3.add(but[6]);
-      panelSub3.add(Box.createHorizontalStrut(15));
+      panelSub3.add(but[2 * three]);
+      panelSub3.add(Box.createHorizontalStrut(fty));
       panelSub3.add(butMultiply);
       panelSub3.add(butDivide);
       panel.add(panelSub3);
 
       panelSub4.add(but[7]);
-      panelSub4.add(but[8]);
-      panelSub4.add(but[9]);
-      panelSub4.add(Box.createHorizontalStrut(15));
+      panelSub4.add(but[2 * 2 * 2]);
+      panelSub4.add(but[three * three]);
+      panelSub4.add(Box.createHorizontalStrut(fty));
       panelSub4.add(butEqual);
       panelSub4.add(butCancel);
       panel.add(panelSub4);
